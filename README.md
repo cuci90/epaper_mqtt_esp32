@@ -7,7 +7,6 @@ This project uses the following libraries:
 - https://github.com/tzapu/WiFiManager
 - https://github.com/ZinggJM/GxEPD2
 - https://github.com/adafruit/Adafruit_MQTT_Library
-- https://github.com/olikraus/u8g2/wiki/fntlistall
 
 ### Wiring
 
@@ -23,14 +22,16 @@ This project uses the following libraries:
 | BUSY  |  P25        | Busy |
 
 ### Choose a display
-Check GxEPD2 Library to see if your display is supported. Copy your display driver class over to the template.
+Check GxEPD2 Library to see if your display is supported. Copy your display driver class definition over to the template.
 I have tested Waveshare 2.7 and 4.2 and both display definitions are in the code.
+
+Example: `#define GxEPD2_DRIVER_CLASS GxEPD2_420`
 
 ### Chosse font
 You can easily add different fonts. Look for a u8g2 font.
 Then add in the code an additonal else-if part with the name of the font.
 
-Example:
+Example:`#define GxEPD2_DRIVER_CLASS GxEPD2_420 `
 
 `else if (parts[1] == "logisoso22") {
         u8g2Fonts.setFont(u8g2_font_logisoso22_tf);
