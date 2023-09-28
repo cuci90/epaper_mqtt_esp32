@@ -31,7 +31,7 @@ Example: `#define GxEPD2_DRIVER_CLASS GxEPD2_420`
 You can easily add different fonts. Look for a u8g2 font.
 Then add in the code an additonal else-if part with the name of the font.
 
-Example:`#define GxEPD2_DRIVER_CLASS GxEPD2_420 `
+Example:
 
 `else if (parts[1] == "logisoso22") {
         u8g2Fonts.setFont(u8g2_font_logisoso22_tf);
