@@ -7,6 +7,9 @@ This project uses the following libraries:
 - https://github.com/tzapu/WiFiManager
 - https://github.com/ZinggJM/GxEPD2
 - https://github.com/adafruit/Adafruit_MQTT_Library
+- https://github.com/olikraus/u8g2/wiki/fntlistall
+
+### Wiring
 
 | Epaper Pin        | ESP32           | Description  |
 | ------------- |:-------------:| -----:|
@@ -19,13 +22,23 @@ This project uses the following libraries:
 | RST   |  P26        | Reset, low active |
 | BUSY  |  P25        | Busy |
 
+### Choose a display
+Check GxEPD2 Library to see if your display is supported. Copy your display driver class over to the template.
+I have tested Waveshare 2.7 and 4.2 and both display definitions are in the code.
 
-Choose display from here
-I have Waveshare 2,7 and 4,2 tested and these are in the code
+### Chosse font
+You can easily add different fonts. Look for a u8g2 font.
+Then add in the code an additonal else-if part with the name of the font.
 
-Font
+Example:
 
-#### MQTT control/syntax
+`else if (parts[1] == "logisoso22") {
+        u8g2Fonts.setFont(u8g2_font_logisoso22_tf);
+      }`
+
+
+
+### MQTT control/syntax
 There are 6 different methods you can use:
 - drawLine
 - fillRect
@@ -36,13 +49,16 @@ There are 6 different methods you can use:
 
 drawLine usage:
 drawLine-*from x position*-*from y position*-*to x position*-*to y position*
+
 Example: `drawLine-10-50-10-50`
 
 fillRect & drawRect usage:
-fillRect-*from x position*-*from y position*-*width*-*height*
+fillRect-from x position-*from y position*-*width*-*height*
+
 Example: `drawRect-10-50-10-50`
 
 printText usage:
 printText-*front name*-*x position*-*y position*-*text to be displayed*
+
 Example: `printText-logisoso50-50-10-Das ist ein Text`
 
