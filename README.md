@@ -1,5 +1,5 @@
 # MQTT controlled EPaper for ESP32
-ESP32 template to draw on an EPaper display
+ESP32 template to draw "freely" on an EPaper display via MQTT
 
 With the attached code you can control your EPaper Display (like Waveshare) via MQTT commands.
 
