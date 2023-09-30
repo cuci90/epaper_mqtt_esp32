@@ -21,6 +21,21 @@ This project uses the following libraries:
 | RST   |  P26        | Reset, low active |
 | BUSY  |  P25        | Busy |
 
+### WiFi
+After first flash the ESP will open a AccesPoint called *EpaperAccessPoint*. Connect to this WiFi with your phone and set up the connection to your network.
+
+### MQTT Setup
+Replace the following constants in the code by your respective MQTT Broker configuration
+
+`char mqtt_server[40] = "yourMQTTBrokerIP"; // MQTT broker address`
+
+`char mqtt_port[6] = "1883"; // MQTT broker port`
+
+`char mqtt_username[40] = "youMQTTUserName"; // MQTT username`
+
+`char mqtt_password[40] = "yourPW"; // MQTT password`
+
+
 ### Choose a display
 Check GxEPD2 Library to see if your display is supported. Copy your display driver class definition over to the template.
 I have tested Waveshare 2.7 and 4.2 and both display definitions are in the code.
