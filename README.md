@@ -64,6 +64,8 @@ There are 6 different methods you can use:
 - drawAll
 - clearScreen
 
+Commands "fillRect", "drawRect", "printText" will save all the drawings in buffer. Only after "drawAll" command is send, the display will draw everything.
+
 drawLine usage:
 drawLine-*from x position*-*from y position*-*to x position*-*to y position*
 
