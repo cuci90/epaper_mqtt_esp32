@@ -9,7 +9,7 @@ This project uses the following libraries:
 - https://github.com/ZinggJM/GxEPD2
 - https://github.com/adafruit/Adafruit_MQTT_Library
 
-### Wiring
+### Wiring (4-wire SPI)
 
 | Epaper Pin        | ESP32           | Description  |
 | ------------- |:-------------:| -----:|
@@ -22,7 +22,7 @@ This project uses the following libraries:
 | RST   |  P26        | Reset, low active |
 | BUSY  |  P25        | Busy |
 
-### WiFi (4-wire SPI)
+### WiFi 
 After first flash the ESP will open a AccesPoint called *EpaperAccessPoint*. Connect to this WiFi with your phone and set up the connection to your network.
 
 ### MQTT Setup
