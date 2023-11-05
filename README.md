@@ -22,7 +22,7 @@ This project uses the following libraries:
 | RST   |  P26        | Reset, low active |
 | BUSY  |  P25        | Busy |
 
-### WiFi
+### WiFi (4-wire SPI)
 After first flash the ESP will open a AccesPoint called *EpaperAccessPoint*. Connect to this WiFi with your phone and set up the connection to your network.
 
 ### MQTT Setup
