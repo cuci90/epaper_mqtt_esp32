@@ -165,7 +165,7 @@ void processMQTTMessage(String message) {
 
   // Split the payload into parts
   for (int i = 0; i < message.length(); i++) {
-    if (message.charAt(i) == '-') {
+    if (message.charAt(i) == '~') {
       parts[partCount++] = message.substring(separatorIndex, i);
       separatorIndex = i + 1;
     }
