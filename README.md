@@ -43,7 +43,7 @@ I have tested Waveshare 2.7 and 4.2 and both display definitions are in the code
 
 Example: `#define GxEPD2_DRIVER_CLASS GxEPD2_420`
 
-### Chosse font
+### Choose font
 You can easily add different fonts. Look for a u8g2 font.
 Then add in the code an additonal else-if part with the name of the font.
 
@@ -67,17 +67,17 @@ There are 6 different methods you can use:
 Commands "fillRect", "drawRect", "printText" will save all the drawings in buffer. Only after "drawAll" command is send, the display will draw everything.
 
 drawLine usage:
-drawLine-*from x position*-*from y position*-*to x position*-*to y position*
+drawLine~*from x position*~*from y position*~*to x position*~*to y position*
 
-Example: `drawLine-10-50-10-50`
+Example: `drawLine~10~50~10~50`
 
 fillRect & drawRect usage:
-fillRect-from x position-*from y position*-*width*-*height*
+fillRect~from x position~*from y position*~*width*~*height*
 
-Example: `drawRect-10-50-10-50`
+Example: `drawRect~10~50~10~50`
 
 printText usage:
-printText-*front name*-*x position*-*y position*-*text to be displayed*
+printText-*front name*~*x position*~*y position*~*text to be displayed*
 
-Example: `printText-logisoso50-50-10-Das ist ein Text`
+Example: `printText~logisoso50~50~10~Das ist ein Text`
 
