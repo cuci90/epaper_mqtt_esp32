@@ -17,7 +17,7 @@ BUSY  P25   Busy status output pin (means busy)
 #define ENABLE_GxEPD2_GFX 0
 #include <GxEPD2_BW.h>
 #include <GxEPD2_3C.h>
-#include <U8g2_for_Adafruit_GFX.h> // library for Fonts --> Choose here https://github.com/olikraus/u8g2/wiki/fntlistall 
+#include <U8g2_for_Adafruit_GFX.h> // library for Fonts ----> Choose here https://github.com/olikraus/u8g2/wiki/fntlistall 
 U8G2_FOR_ADAFRUIT_GFX u8g2Fonts;
 
 // select the display class (only one), matching the kind of display panel

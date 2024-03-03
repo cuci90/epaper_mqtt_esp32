@@ -26,7 +26,7 @@ This project uses the following libraries:
 After first flash the ESP will open a AccesPoint called *EpaperAccessPoint*. Connect to this WiFi with your phone and set up the connection to your network.
 
 ### MQTT Setup
-Replace the following constants in the code by your respective MQTT Broker configuration
+Replace the following constants in the code by your respective MQTT Broker configuration.
 
 `char mqtt_server[40] = "yourMQTTBrokerIP"; // MQTT broker address`
 
